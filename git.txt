@@ -1,0 +1,28 @@
+git init --bare .
+git init .
+git add file.txt
+git commit -am "comment"
+git checkout -b branch
+git log --oneline --decorate --graph
+git merge branch
+git remote -v
+git remote add origin /user/git
+git remote remove origin
+git push
+git pull
+git push -u origin master
+git fetch
+git stash
+git stash list
+git stash apply
+git stash pop
+git mergetool
+git reset --hard commit
+git revert commit
+git rebase commit
+
+
+
+git config --global merge.tool "kdiff3"
+git config --global core.editor "vim"
+
