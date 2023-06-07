@@ -11,7 +11,7 @@ git remote add orgin /user/remote
 git remote remove origin
 git push
 git pull
-git pull -u origin master
+git push -u origin master
 git fetch
 git stash list
 git stash apply
