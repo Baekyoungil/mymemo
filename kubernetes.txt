@@ -1,0 +1,5 @@
+kubectl get pods
+kubectl logs POD_ID
+kubectl apply -f FILENAME
+kubectl delete -f .
+
