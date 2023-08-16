@@ -1,11 +1,11 @@
-git init --bare .
-git init .
-git clone /user/remote myremote
-git checkout -b mybranch 
-git add file.txt
+git init --bare .	//원격브랜치 생성
+git init .			//로컬브랜치 생성
+git clone /user/remote [myremote]
+git checkout -b [mybranch] 
+git add [filename]
 git commit -am "comment"
 git log --oneline --decorate --graph
-git merge branch
+git merge [branch]
 git remote -v
 git remote add orgin /user/remote
 git remote remove origin
@@ -17,8 +17,11 @@ git stash list
 git stash apply
 git stash pop
 git mergetool
-git reset --hard commit
-git revert commit
-git rebase commit
+git reset --hard [commit]
+git revert [commit]
+git revert --continue	//충돌해결 후 계속진행
+git revert --abort		//충돌이전으로 되돌림
+git rebase [commit]
 git config --global merge.tool "kdiff3"
 git config --global core.editor "vim"
+git restore --staged [filename]
