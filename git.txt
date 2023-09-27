@@ -1,7 +1,10 @@
 git init --bare .	//원격브랜치 생성
 git init .			//로컬브랜치 생성
-git clone /user/remote [myremote]
-git checkout -b [mybranch] 
+git clone /user/remote [remote]
+git branch -v	//목록
+git branch [branch]	//생성
+git branch -d [branch] //삭제
+git checkout -b [branch] 
 git add [filename]
 git commit -am "comment"
 git log --oneline --decorate --graph
